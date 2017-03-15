@@ -33,7 +33,20 @@ public class Card {
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		rank = cardRank;
+		suit = cardSuit;
+		pointValue = cardPointValue;
 	}
+	public String getRank(){
+		return rank;
+	}
+	public String getSuit(){
+		return suit;
+	}
+	public int getPointValue(){
+		return pointValue;
+	}
+
 
 
 	/**
@@ -68,6 +81,12 @@ public class Card {
 	 */
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		if (getPointValue() == otherCard.getPointValue()){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 	/**
@@ -83,5 +102,6 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		System.out.println(getRank() + " of " + getSuit() + "(point value = " + getPointValue() + ")");
 	}
 }
