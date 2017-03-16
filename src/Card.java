@@ -53,25 +53,6 @@ public class Card {
 	 * Accesses this <code>Card's</code> suit.
 	 * @return this <code>Card's</code> suit.
 	 */
-	public String suit() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-   }
-
-	/**
-	 * Accesses this <code>Card's</code> rank.
-	 * @return this <code>Card's</code> rank.
-	 */
-	public String rank() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	}
-
-   /**
-	 * Accesses this <code>Card's</code> point value.
-	 * @return this <code>Card's</code> point value.
-	 */
-	public int pointValue() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	}
 
 	/** Compare this card with the argument.
 	 * @param otherCard the other card to compare to this
@@ -102,6 +83,6 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		System.out.println(getRank() + " of " + getSuit() + "(point value = " + getPointValue() + ")");
+		return(getRank() + " of " + getSuit() + "(point value = " + getPointValue() + ")");
 	}
 }
