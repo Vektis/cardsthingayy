@@ -5,9 +5,10 @@ import java.util.*;
 public class Deck {
     public ArrayList<Card> ar15 = new ArrayList();
     public Deck(String ranks[],String suits[],int points[]){
-        for (int i = 0; i < ranks.length-1; i++) {
-            Card remington = new Card(ranks[i],suits[i],points[i]);
-            ar15.add(remington);
+        for (int i = 0; i < suits.length; i++) {
+            for (int j = 0; j < ranks.length; j++) {
+                ar15.add(new Card(ranks[j],suits[i],points[j]));
+            }
         }
     }
     public boolean isEmpty(){
