@@ -25,6 +25,10 @@ public class Deck {
         ar15.remove(ar15.size()-1);
         return glock;
     }
+    public void addCustom(String rank, String suit, int val){
+        Card c = new Card(rank,suit,val);
+        ar15.add(c);
+    }
 
 
 
